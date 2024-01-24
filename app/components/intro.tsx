@@ -18,7 +18,7 @@ const Intro = () => {
           FRONT-END DEVELOPER
         </h1>
         <div className="py-5">
-          <Btn />
+          <Btn text="gustaf@gronlund.dev" className="" onClick={() => {}} />
           <div className="flex flex-row py-5 gap-5">
             <FaGithub className="scale-150 cursor-pointer" />
             <FaLinkedin className="scale-150 cursor-pointer" />

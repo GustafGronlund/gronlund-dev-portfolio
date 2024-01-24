@@ -6,7 +6,7 @@ import { PiPackage } from "react-icons/pi";
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-transparent md:bg-transparent h-15 flex flex-row justify-between w-full px-10 py-5">
+    <header className="sticky top-0 md:max-w-screen-xl bg-transparent md:bg-transparent h-15 flex flex-row justify-between w-full px-10 py-5">
       <div className="flex flex-col">
         <p className="text-xs">GUSTAF GRÖNLUND</p>
         <p className="text-xs">CMT+6 (10:33 PM, SWE)</p>
