@@ -1,3 +1,4 @@
+import About from "./components/about";
 import Header from "./components/header";
 import Intro from "./components/intro";
 import Projects from "./components/projects";
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="flex flex-col items-center ">
       <Header />
       <Intro />
+      <About />
       <Projects />
     </main>
   );

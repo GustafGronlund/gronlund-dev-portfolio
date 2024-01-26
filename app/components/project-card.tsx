@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <Btn text="Läs mer" className="w-fit" onClick={() => {}} />
         </div>
       </div>
-      <figure className="md:w-1-/2s pl-10">
+      <figure className="md:w-1-/2s pl-0 md:pl-10">
         <Image
           src={imageUrl}
           alt="Picture of project"
