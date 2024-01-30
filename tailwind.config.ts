@@ -16,6 +16,8 @@ const config: Config = {
       fontFamily: {
         grotesk: "var(--font-grotesk)",
         mono: "var(--font-mono)",
+        deca: "var(--font-deca)",
+        roboto: "var(--font-roboto)",
       },
     },
   },

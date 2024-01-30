@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Space_Mono, Space_Grotesk } from "next/font/google";
+import {
+  Roboto,
+  Space_Mono,
+  Space_Grotesk,
+  Lexend_Deca,
+} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-roboto",
+});
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -13,6 +22,11 @@ const space_mono = Space_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: "400",
+});
+
+const lexend_deca = Lexend_Deca({
+  subsets: ["latin"],
+  variable: "--font-deca",
 });
 
 export const metadata: Metadata = {

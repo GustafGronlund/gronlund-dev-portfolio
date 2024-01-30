@@ -1,12 +1,11 @@
 import React from "react";
+import ComponentTitle from "./component-title";
 
 function About() {
   return (
     <main className="w-full flex flex-end justify-end px-10 md:max-w-screen-xl py-10">
       <article className=" flex flex-col md:max-w-screen-xl md:justify-end">
-        <h1 className="mb-10 text-lg font-grotesk text-[#282828]">
-          01.<span className="text-2xl text-gray-500"> ABOUT</span>
-        </h1>
+        <ComponentTitle number="01" title="ABOUT" />
         <div className="w-fit md:flex md:flex-col md:justify-end md:items-end">
           <p className="font-mono text-base md:w-[50ch]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
