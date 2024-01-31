@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 
 function Skills() {
   return (
-    <main className="mb-10 w-screen px-10 md:max-w-screen-xl">
+    <main className="mb-10 mt-40 w-screen px-10 md:mt-60 md:max-w-screen-xl">
       <Marquee autoFill={true} speed={200} className="h-fit overflow-hidden">
         <p className="w-full font-grotesk text-5xl text-[#282828] md:text-9xl">
           MY SKILLS - MY SKILLS - MY SKILLS - MY SKILLS - MY SKILLS -
