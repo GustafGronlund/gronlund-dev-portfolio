@@ -20,7 +20,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       key={skillsTitle}
-      className="relative flex h-[200px] w-[250px] flex-col justify-between overflow-hidden border-0 bg-[#282828] p-3 font-mono text-[#f8f8f8] md:h-full md:w-full"
+      className="font-tthoves relative flex h-[200px] w-[250px] flex-col justify-between overflow-hidden border-0 bg-[#282828] p-3 text-[#f8f8f8] md:h-full md:w-full"
     >
       <div>
         <motion.p
@@ -33,7 +33,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
           transition={{
             duration: 0.5,
           }}
-          className="relative z-20 cursor-default pb-3 text-base"
+          className="font-tthoves relative z-20 cursor-default pb-3 text-base font-semibold tracking-tight"
         >
           {skillsTitle}
         </motion.p>
@@ -47,7 +47,7 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
           transition={{
             duration: 0.3,
           }}
-          className="relative z-20 cursor-default overflow-hidden font-roboto text-xs text-[#f8f8f8]"
+          className="font-tthoves relative z-20 cursor-default overflow-hidden text-sm tracking-tight text-[#f8f8f8]"
         >
           {skillsDescription}
         </motion.p>
