@@ -6,6 +6,7 @@ import {
   Lexend_Deca,
 } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "./components/smooth-scroll";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -42,8 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${space_grotesk.variable} ${space_mono.variable} bg-[#f8f8f8]`}>
-        {children}
+        className={`${space_grotesk.variable} ${space_mono.variable} bg-[#f8f8f8]`}
+      >
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
