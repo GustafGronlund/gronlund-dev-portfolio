@@ -11,16 +11,20 @@ export const links = [
 export const projectsData = [
   {
     id: 0,
+    year: "2023",
     title: "Norcino",
     description: "",
-    tags: ["Flutter", "Dart"],
+    tags: ["Design", "Development"],
+    techStack: ["Flutter", "Dart"],
     imageUrl: projectsImg1,
   },
   {
     id: 1,
+    year: "2023",
     title: "ZapUp",
     description: "",
-    tags: ["Flutter", "Dart"],
+    tags: ["Design", "Development"],
+    techStack: ["Flutter", "Dart"],
     imageUrl: projectsImg2,
   },
 ] as const;

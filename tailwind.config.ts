@@ -18,6 +18,7 @@ const config: Config = {
         mono: "var(--font-mono)",
         deca: "var(--font-deca)",
         roboto: "var(--font-roboto)",
+        tthoves: ["var(--font-tthoves)"],
       },
     },
   },

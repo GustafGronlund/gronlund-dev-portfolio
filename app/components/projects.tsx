@@ -1,15 +1,25 @@
-import Btn from "./btn";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import ProjectCard from "./project-card";
-import ComponentTitle from "./component-title";
 
 const Projects = () => {
   return (
-    <main className="px-10  md:max-w-screen-xl">
-      <ComponentTitle number="03" title="PROJECTS" />
+    <main className="mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl">
+      <div className="flex flex-col items-end justify-end">
+        <h1 className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] md:text-9xl">
+          Selected
+        </h1>
+        <h1 className="font-tthoves tracking-tigther text-5xl font-bold text-[#282828] md:text-9xl">
+          Works
+        </h1>
+      </div>
       {projectsData.map(function (project) {
-        return <ProjectCard key={project.id} {...project} />;
+        return (
+          <ProjectCard
+            key={project.id}
+            projectsDataLength={projectsData.length}
+            {...project}
+          />
+        );
       })}
     </main>
   );
