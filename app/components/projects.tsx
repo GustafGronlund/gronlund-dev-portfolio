@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 const Projects = () => {
   return (
-    <main className="mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl">
+    <main className="mb-10 mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl">
       <div className="flex flex-col items-end justify-end">
         <h1 className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] md:text-9xl">
           Selected

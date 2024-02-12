@@ -23,7 +23,7 @@ export const projectsData = [
     year: "2023",
     title: "ZapUp",
     description: "",
-    tags: ["Design", "Development"],
+    tags: ["Development"],
     techStack: ["Flutter", "Dart"],
     imageUrl: projectsImg2,
   },
