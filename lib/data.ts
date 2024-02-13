@@ -12,7 +12,7 @@ export const projectsData = [
   {
     id: 0,
     year: "2023",
-    title: "Norcino",
+    title: "Vizz",
     description: "",
     tags: ["Design", "Development"],
     techStack: ["Flutter", "Dart"],

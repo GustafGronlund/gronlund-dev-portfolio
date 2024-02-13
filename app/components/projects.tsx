@@ -8,7 +8,7 @@ const Projects = () => {
         <h1 className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] md:text-9xl">
           Selected
         </h1>
-        <h1 className="font-tthoves tracking-tigther text-5xl font-bold text-[#282828] md:text-9xl">
+        <h1 className="tracking-tigther font-tthoves text-5xl font-bold text-[#282828] md:text-9xl">
           Works
         </h1>
       </div>
