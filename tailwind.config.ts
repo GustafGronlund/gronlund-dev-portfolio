@@ -6,6 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -20,9 +21,12 @@ const config: Config = {
         roboto: "var(--font-roboto)",
         tthoves: ["var(--font-tthoves)"],
       },
+      colors: {
+        dark: "#232a3c",
+        medium: "#293245",
+      },
     },
   },
   plugins: [],
-  darkMode: "class",
 };
 export default config;

@@ -31,48 +31,51 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       key={id}
-      className="mt-20 cursor-pointer justify-between border-b border-[#282828] font-mono md:flex md:flex-row"
+      className="mt-20 cursor-pointer justify-between border-b border-[#282828] font-mono dark:border-[#e9e9e9] md:flex md:flex-row"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="flex flex-col md:w-1/2">
         <div className="align-center flex w-full items-center justify-between md:items-start">
-          <p className="font-tthoves text-xs font-bold tracking-tighter text-[#282828] md:text-3xl">
+          <p className="font-tthoves text-xs font-bold tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:text-3xl">
             0{id + 1}/0{projectsDataLength}{" "}
           </p>
-          <p className="font-tthoves text-xs font-medium tracking-tighter text-[#282828] md:text-xl md:font-semibold">
+          <p className="font-tthoves text-xs font-medium tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:text-xl md:font-semibold">
             {year}
           </p>
         </div>
         <div className="hidden md:mt-10 md:flex md:w-full md:justify-between">
-          <p className="mb-5 hidden w-full font-tthoves text-base font-semibold tracking-tight text-[#282828] md:mb-0 md:block md:w-[30ch]">
+          <p className="mb-5 hidden w-full font-tthoves text-base font-semibold tracking-tight text-[#282828] dark:text-[#e9e9e9] md:mb-0 md:block md:w-[30ch]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec
             dui aliquet, suscipit leo non, posuere mi. In at orci accumsan,
             tempus urna et, blandit nunc. Vestibulum ornare eros eu dapibus
             tristique.
           </p>
-          <button className="hidden h-fit rounded-full bg-[#282828] p-3 md:block">
+          <button className="hidden h-fit rounded-full bg-[#282828] p-3 dark:bg-[#e9e9e9] md:block">
             <motion.span
               initial={{ rotate: 0 }}
               animate={{ rotate: isHovered ? 45 : 0 }}
               transition={{ duration: 0.5 }}
               className="block"
             >
-              <GoArrowUpRight size={20} className="fill-white" />
+              <GoArrowUpRight
+                size={20}
+                className="fill-white dark:fill-black"
+              />
             </motion.span>
           </button>
         </div>
         <div className="mb-0 mt-1 flex flex-row justify-between md:mb-10 md:mt-auto">
-          <h1 className="font-grotesk text-2xl font-semibold tracking-tighter text-[#282828] md:text-5xl lg:text-7xl">
+          <h1 className="font-grotesk text-2xl font-semibold tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:text-5xl lg:text-7xl">
             {title}
           </h1>
           <div className="flex flex-row gap-3">
             {tags.map((tag) => (
               <div
                 key={tag}
-                className="rounded-full border border-[#282828] px-3 py-1 md:mt-auto"
+                className="rounded-full border border-[#282828] px-3 py-1 dark:border-[#e9e9e9] md:mt-auto"
               >
-                <p className="font-tthoves text-xs font-medium tracking-tighter text-[#282828]">
+                <p className="font-tthoves text-xs font-medium tracking-tighter text-[#282828] dark:text-[#e9e9e9]">
                   {tag}
                 </p>
               </div>

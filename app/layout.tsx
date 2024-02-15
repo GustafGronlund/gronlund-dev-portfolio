@@ -7,7 +7,7 @@ import {
 } from "next/font/google";
 import localfont from "next/font/local";
 import "./globals.css";
-import SmoothScroll from "./components/smooth-scroll";
+import SmoothScroll from "./components/shared/smooth-scroll";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${space_grotesk.variable} ${space_mono.variable} ${tthoves.variable} bg-[#e9e9e9]`}
+        className={`${space_grotesk.variable} ${space_mono.variable} ${tthoves.variable} bg-[#e9e9e9] dark:bg-[#282828]`}
       >
         <SmoothScroll>{children}</SmoothScroll>
       </body>
