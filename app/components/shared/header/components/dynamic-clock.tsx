@@ -7,7 +7,7 @@ const ClockComponent = dynamic(() => import("react-live-clock"), {
 const DynamicClock = () => {
   return (
     <ClockComponent
-      className="font-mono text-xs"
+      className="font-mono text-xs mix-blend-difference"
       format={"HH:mm:ss"}
       ticking={true}
       timezone={"Europe/Paris"}
