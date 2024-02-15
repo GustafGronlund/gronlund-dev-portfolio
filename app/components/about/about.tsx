@@ -1,14 +1,12 @@
-import React from "react";
 import Image from "next/image";
 import me from "@/public/me.jpeg";
+import SectionTitleText from "../shared/section-title-text";
 
 function About() {
   return (
     <main className="mt-40 flex w-full flex-col px-10 md:mt-60 md:max-w-screen-xl">
       <div className="mb-20 w-full">
-        <h1 className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] md:text-9xl">
-          About
-        </h1>
+        <SectionTitleText title="About" />
       </div>
       <section className="flex flex-col-reverse md:flex md:flex-row">
         <div className="flex h-fit flex-col md:justify-between">
@@ -32,7 +30,7 @@ function About() {
             </div>
           </div>
           <div className="col-start-2 row-start-2 mt-10 md:col-start-1 md:mt-40">
-            <p className="font-tthoves place-self-center text-base font-bold tracking-tight text-[#282828] md:col-start-2 md:w-[25ch]">
+            <p className="place-self-center font-tthoves text-base font-bold tracking-tight text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:w-[25ch]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               viverra rhoncus metus, finibus interdum felis egestas non. Ut ac
               augue sem. Aliquam a sodales sapien, ac accumsan lacus. Curabitur
@@ -43,7 +41,7 @@ function About() {
           </div>
         </div>
         <div className="w-full md:mt-auto md:pl-40">
-          <p className="font-tthovescol-start-1 row-start-1 w-full text-2xl font-medium tracking-tighter text-[#282828] md:col-start-2 md:row-start-2 md:text-7xl">
+          <p className="col-start-1 row-start-1 w-full font-tthoves text-2xl font-medium tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:row-start-2 md:text-7xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             viverra rhoncus metus, finibus interdum felis egestas non.
           </p>

@@ -1,7 +1,7 @@
 import { skillsData } from "@/lib/data";
-import React from "react";
-import SkillsCard from "./skills-card";
+import SkillsCard from "./components/skills-card";
 import Marquee from "react-fast-marquee";
+import SectionTitleText from "../shared/section-title-text";
 
 function Skills() {
   return (
@@ -12,9 +12,7 @@ function Skills() {
           speed={200}
           className="mb-20 h-fit overflow-hidden"
         >
-          <p className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] md:text-9xl">
-            MY SKILLS •
-          </p>
+          <SectionTitleText title="MY SKILLS •" />
         </Marquee>
       </div>
       <article className="no-scrollbar flex w-full flex-col justify-between gap-10 overflow-x-scroll md:w-full md:overflow-hidden">
