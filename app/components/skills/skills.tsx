@@ -14,7 +14,7 @@ function Skills() {
           speed={200}
           className="mb-20 h-fit overflow-hidden"
         >
-          <SectionTitleText title="MY SKILLS •" />
+          <SectionTitleText title="MY SKILLS ┏(-_-)┛ MY SKILLS ┗(-_-)┓ MY SKILLS ┗(-_-)┛ MY SKILLS ┏(-_-)┓ " />
         </Marquee>
       </div>
       <ScrollReveal delay={0} duration={1}>
