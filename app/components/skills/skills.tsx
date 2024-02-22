@@ -14,7 +14,12 @@ function Skills() {
           speed={200}
           className="mb-20 h-fit overflow-hidden"
         >
-          <SectionTitleText title="MY SKILLS ┏(-_-)┛ MY SKILLS ┗(-_-)┓ MY SKILLS ┗(-_-)┛ MY SKILLS ┏(-_-)┓ " />
+          <ScrollReveal delay={0.3} duration={1.25} initialY={0} animateY={0}>
+            <h1 className="font-tthoves text-5xl font-bold tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:text-9xl">
+              MY SKILLS ┏(-_-)┛ MY SKILLS ┗(-_-)┓ MY SKILLS ┗(-_-)┛ MY SKILLS
+              ┏(-_-)┓{" "}
+            </h1>
+          </ScrollReveal>
         </Marquee>
       </div>
       <ScrollReveal delay={0} duration={1}>

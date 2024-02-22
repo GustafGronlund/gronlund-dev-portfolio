@@ -6,8 +6,10 @@ const Projects = () => {
   return (
     <main className="mb-10 mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl">
       <div className="flex flex-col items-end justify-end">
-        <SectionTitleText title="Selected" />
-        <SectionTitleText title="Works" />
+        <SectionTitleText
+          title={["Selected", "Works"]}
+          className="flex flex-col items-end justify-end"
+        />
       </div>
       {projectsData.map(function (project) {
         return (

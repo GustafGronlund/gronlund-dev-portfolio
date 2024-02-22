@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import arrow from "@/public/svg/arrow-down.svg";
 import Image from "next/image";
+import SectionTitleText from "./section-title-text";
 
 const Footer = () => {
   return (
