@@ -40,12 +40,15 @@ function About() {
               animateY={0}
             >
               <p className="place-self-center font-tthoves text-base font-bold tracking-tight text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:w-[25ch]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                viverra rhoncus metus, finibus interdum felis egestas non. Ut ac
-                augue sem. Aliquam a sodales sapien, ac accumsan lacus.
-                Curabitur dapibus feugiat elementum. Nullam aliquet a dolor id
-                consequat. Donec feugiat auctor nibh id mattis. Ut faucibus est
-                ligula, id lobortis odio iaculis elementum.
+                Hi there! I{"'"}m a driven developer deeply passionate about
+                design and user experience. With over 4 years of hands-on
+                experience in web and mobile development, complemented by a
+                recent degree in Front End Development, I specialize in creating
+                high-quality applications that seamlessly blend functionality
+                with visual appeal. Always eager for fresh challenges and
+                opportunities to learn and grow, I am ready to contribute my
+                skills to your projects. Let{"'"}s connect and discuss how we
+                can bring your ideas to life!
               </p>
             </ScrollReveal>
           </div>
@@ -53,8 +56,8 @@ function About() {
         <div className="w-full md:mt-auto md:pl-40">
           <ScrollReveal delay={0} duration={1.5} initialY={10} animateY={0}>
             <p className="col-start-1 row-start-1 w-full font-tthoves text-2xl font-medium tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:row-start-2 md:text-7xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              viverra rhoncus metus, finibus interdum felis egestas non.
+              Passionate Developer Crafting Intuitive and User-Friendly Digital
+              Experiences with a Love for Design.
             </p>
           </ScrollReveal>
         </div>
