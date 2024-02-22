@@ -32,72 +32,85 @@ export const projectsData = [
 export const skillsData = [
   {
     name: "HTML",
-    description: "I use this to create the skeleton of the application",
+    description: "I use HTML to build the foundation of web pages.",
   },
   {
     name: "CSS",
-    description: "I use this to help structure the HTML skeleton",
+    description: "I use CSS to add visual design to web pages.",
   },
   {
     name: "JavaScript",
     description:
-      "I use this to make the application become interactive and alive!",
+      "I use JavaScript to add interactivity to web pages, like animations, form validation, and dynamic content updates.",
   },
   {
     name: "TypeScript",
     description:
-      "I use this when I want the application to be more strictly written :)",
+      "I use TypeScript to write cleaner and more predictable code, especially for large and complex projects.",
   },
   {
     name: "React",
-    description: "I use this to make the application feel reactivity",
+    description:
+      "I use React to build user interfaces that are responsive, interactive, and engaging.",
   },
   {
     name: "React Native",
-    description: "I use this to make mobile applications",
+    description:
+      "I use React Native to build cross-platform mobile applications for iOS and Android.",
   },
   {
     name: "Next.js",
-    description: "I prefer to use this when developing for the web",
+    description:
+      "I prefer Next.js for web development because it offers a powerful framework for building fast, user-friendly, and SEO-optimized applications.",
   },
   {
     name: "Flutter",
-    description: "I use this to make mobile applications aswell",
+    description:
+      "I also use Flutter to build high-performance, cross-platform mobile applications for iOS and Android.",
   },
   {
     name: "Node.js",
-    description: "I use this to write server applications",
+    description:
+      "I use Node.js to build scalable, high-performance server applications for web and mobile devices.",
   },
   {
     name: "Express",
-    description: "I use this framework for writing backend on a Node.js",
+    description:
+      "I use Express.js to build robust, scalable web APIs for Node.js applications.",
   },
   {
     name: "Git",
-    description: "I use this to keep track of my code",
+    description:
+      "I use Git to collaborate with others on code projects and track changes over time.",
   },
   {
     name: "Redux",
-    description: "I use this sometimes to handle states in my application",
+    description:
+      "I use Redux to manage state in my React applications in a predictable and scalable way.",
   },
   {
     name: "MongoDB",
-    description: "I use this to store data in my applications",
+    description:
+      "I use MongoDB to store and manage data for my web and mobile applications in a scalable and efficient way.",
   },
   {
     name: "Firebase",
-    description: "I use this to store data in my applications",
+    description:
+      "I use Firebase to store and manage data for my web and mobile applications in a scalable and secure way.",
   },
   {
     name: "Tailwind",
-    description: "I use this to style my applications",
+    description:
+      "I use Tailwind to build responsive and visually appealing web applications with ease.",
   },
   {
     name: "Dart",
-    description: "I use this to write logic in Flutter applications",
+    description:
+      "I use Dart to develop high-performance and cross-platform mobile applications with Flutter.",
   },
   {
     name: "Framer Motion",
-    description: "I use this to animate my applications",
+    description:
+      "I use Framer Motion to create engaging and interactive animations for my web and mobile applications.",
   },
 ] as const;
