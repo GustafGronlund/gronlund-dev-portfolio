@@ -1,9 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import arrow from "@/public/svg/arrow-down.svg";
-import Image from "next/image";
-import SectionTitleText from "./section-title-text";
+import FooterArrow from "./components/footer-arrow";
 
 const Footer = () => {
   return (
@@ -18,11 +16,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-7 flex h-full flex-col md:mt-auto md:items-center md:justify-end md:pr-10">
-          <Image
-            src={arrow}
-            alt="An arrow pointing down to the e-mail"
-            className="-ml-9 scale-50 dark:fill-[#282828] md:ml-0 md:scale-75"
-          />
+          <FooterArrow />
           <a
             href="mailto: gustaf@gronlund.dev"
             className="cursor-pointer font-tthoves text-xl font-semibold tracking-tighter text-[#e9e9e9] dark:text-[#282828] md:mt-10 md:text-3xl"
