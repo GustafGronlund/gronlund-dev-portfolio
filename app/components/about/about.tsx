@@ -23,8 +23,9 @@ function About() {
                   <Image
                     key={index}
                     src={picture}
-                    alt="hej"
+                    alt="Pictures of Gustaf Grönlund in different settings."
                     className="h-[90px] w-[90px] object-cover md:h-[100px] md:w-[100px]"
+                    loading="eager"
                   />
                 </ScrollReveal>
               ))}

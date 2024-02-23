@@ -105,6 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 src={imageUrl}
                 alt="En bild på projektet."
                 className="border-none"
+                loading="eager"
               />
             </motion.div>
           </motion.figure>

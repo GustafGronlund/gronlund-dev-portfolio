@@ -14,12 +14,15 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
   skillsDescription,
 }) => {
   const [hover, setHover] = useState<boolean>(false);
-  const query = window.matchMedia("(max-width: 768px)");
+  const query =
+    typeof window !== "undefined"
+      ? window.matchMedia("(max-width: 768px)")
+      : null;
 
   return (
     <motion.li
-      onMouseEnter={() => setHover(!query.matches ? true : false)}
-      onMouseLeave={() => setHover(!query.matches ? false : false)}
+      onMouseEnter={() => setHover(!query?.matches ? true : false)}
+      onMouseLeave={() => setHover(!query?.matches ? false : false)}
       key={skillsTitle}
       className="relative flex h-[200px] w-[250px] flex-col justify-between overflow-hidden border-0 bg-[#282828] p-3 font-tthoves dark:bg-[#e9e9e9]  md:h-full md:w-full"
     >
