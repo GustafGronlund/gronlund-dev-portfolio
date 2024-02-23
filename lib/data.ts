@@ -1,31 +1,48 @@
-import projectsImg1 from "../public/projects-placeholder.jpg";
-import projectsImg2 from "../public/projects-placeholder.jpg";
+import projectsImg1 from "@/public/vizz-mockup.jpg";
+import projectsImg2 from "@/public/zapup-mockup.jpg";
+import aboutPic1 from "@/public/me.jpeg";
+import aboutPic2 from "@/public/me-second.jpg";
+import aboutPic3 from "@/public/me-third.jpg";
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-];
+export const aboutPictures = [aboutPic1, aboutPic2, aboutPic3] as const;
 
 export const projectsData = [
   {
     id: 0,
     year: "2023",
     title: "Vizz",
-    description: "",
+    description:
+      "Vizz is an in-house project created at COIO TECH, providing a user-friendly solution for effortless contact information sharing. The application enables users to quickly exchange details by scanning a personalized QR code. Thoughtfully designed in Figma and expertly developed using Flutter, Vizz prioritizes the simplicity and speed of contact sharing.",
     tags: ["Design", "Development"],
     techStack: ["Flutter", "Dart"],
     imageUrl: projectsImg1,
+    projectLinks: [
+      { appStore: "https://apps.apple.com/se/app/vizz/id1632176521" },
+      {
+        googlePlay:
+          "https://play.google.com/store/apps/details?id=se.coio.vizz&hl=sv&gl=US",
+      },
+    ],
   },
   {
     id: 1,
     year: "2023",
     title: "ZapUp",
-    description: "",
+    description:
+      "ZapUp, born from Uppladdning, is the go-to app for locating electric vehicle charging stations on the fly. The collaboration resulted in a user-friendly mobile app available on Android and iOS. Reflecting the features of the website, ZapUp allows users to effortlessly find charging stations directly from their mobile devices. Crafted with care, the app combines seamless UI/UX design and programming using Google's Flutter framework.",
     tags: ["Development"],
     techStack: ["Flutter", "Dart"],
     imageUrl: projectsImg2,
+    projectLinks: [
+      {
+        appStore:
+          "https://apps.apple.com/se/app/zapup-charge-finder/id6446351622",
+      },
+      {
+        googlePlay:
+          "https://play.google.com/store/apps/details?id=eu.zapup.cfapp&hl=en_US",
+      },
+    ],
   },
 ] as const;
 
