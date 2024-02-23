@@ -1,8 +1,8 @@
-import projectsImg1 from "@/public/vizz-mockup.jpg";
-import projectsImg2 from "@/public/zapup-mockup.jpg";
-import aboutPic1 from "@/public/me.jpeg";
-import aboutPic2 from "@/public/me-second.jpg";
-import aboutPic3 from "@/public/me-third.jpg";
+import projectsImg1 from "@/public/projects/vizz-mockup.jpg";
+import projectsImg2 from "@/public/projects/zapup-mockup.jpg";
+import aboutPic1 from "@/public/about/me.jpeg";
+import aboutPic2 from "@/public/about/me-second.jpg";
+import aboutPic3 from "@/public/about/me-third.jpg";
 
 export const aboutPictures = [aboutPic1, aboutPic2, aboutPic3] as const;
 
