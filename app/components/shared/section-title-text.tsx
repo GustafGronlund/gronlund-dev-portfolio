@@ -38,15 +38,15 @@ const SectionTitleText: React.FC<SectionTitleTextProps> = ({
         transition={{ staggerChildren: 0.1 }}
         className={`aria-hidden ${className}`}
       >
-        {textArray.map((line) => (
-          <span key={line} className={`block`}>
-            {line.split(" ").map((word) => (
-              <span key={word} className="inline-block">
-                {word.split("").map((char) => (
+        {textArray.map((line, index) => (
+          <span key={line + index} className={`block`}>
+            {line.split(" ").map((word, index) => (
+              <span key={word + index} className="inline-block">
+                {word.split("").map((char, index) => (
                   <motion.span
                     className="inline-block"
                     variants={defaultAnimations}
-                    key={char}
+                    key={char + index}
                   >
                     {char}
                   </motion.span>

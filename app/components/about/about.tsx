@@ -1,11 +1,9 @@
 import Image from "next/image";
-import me from "@/public/me.jpeg";
+import { aboutPictures } from "@/lib/data";
 import SectionTitleText from "../shared/section-title-text";
 import useScrollReveal from "@/app/hooks/useScrollReveal";
 
 function About() {
-  const images = [me, me, me];
-
   const ScrollReveal = useScrollReveal;
   return (
     <main className="mt-40 flex w-full flex-col px-10 md:mt-60 md:max-w-screen-xl">
@@ -16,7 +14,7 @@ function About() {
         <div className="flex h-fit flex-col md:justify-between">
           <div className="col-start-1 row-start-2 place-self-start md:row-start-1">
             <div className="mt-10 grid w-fit grid-cols-2 grid-rows-2 gap-5 md:mt-0">
-              {images.map((picture, index) => (
+              {aboutPictures.map((picture, index) => (
                 <ScrollReveal
                   duration={1.5}
                   delay={0.5 + index * 0.1}
@@ -24,7 +22,7 @@ function About() {
                 >
                   <Image
                     key={index}
-                    src={me}
+                    src={picture}
                     alt="hej"
                     className="h-[90px] w-[90px] object-cover md:h-[100px] md:w-[100px]"
                   />
