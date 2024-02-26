@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import FooterArrow from "./components/footer-arrow";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -29,16 +30,28 @@ const Footer = () => {
         <div className="flex flex-col-reverse items-center justify-center md:flex-row">
           <ul className="flex w-full flex-col items-start gap-5 md:gap-5">
             <li className="flex cursor-pointer flex-row items-center justify-center gap-1 font-tthoves tracking-tight text-[#e9e9e9] dark:text-[#282828]">
-              <span>
-                <FaLinkedin />
-              </span>
-              LinkedIn
+              <Link
+                href="https://www.linkedin.com/in/gustafgronlund/"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
+                <span>
+                  <FaLinkedin className="mr-1" />
+                </span>
+                LinkedIn
+              </Link>
             </li>
             <li className="flex cursor-pointer flex-row items-center justify-center gap-1 font-tthoves tracking-tight text-[#e9e9e9] dark:text-[#282828]">
-              <span>
-                <FaGithubSquare />
-              </span>
-              GitHub
+              <Link
+                href="https://github.com/GustafGronlund"
+                target="_blank"
+                className="flex items-center justify-center"
+              >
+                <span>
+                  <FaGithubSquare className="mr-1" />
+                </span>
+                GitHub
+              </Link>
             </li>
           </ul>
         </div>
