@@ -1,12 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import FooterArrow from "./components/footer-arrow";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [isMouseOverFooter, setMouseOverFooter] = useState(false);
+  const handleMouseMove = (event: any) => {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+    setCursorPosition({ x: mouseX, y: mouseY });
+  };
+
   return (
-    <footer className="flex h-dvh w-full flex-col justify-between bg-[#282828] px-10 pt-10 dark:bg-[#e9e9e9] md:h-fit md:items-center md:px-0 md:pt-0">
+    <motion.footer
+      onMouseMove={handleMouseMove}
+      className="flex h-dvh w-full flex-col justify-between bg-[#282828] px-10 pt-10 dark:bg-[#e9e9e9] md:h-fit md:items-center md:px-0 md:pt-0"
+    >
+      <motion.div
+        className="cursor h-10 w-10 rounded-full bg-gray-50 opacity-50 blur-xl"
+        style={{
+          position: "absolute",
+          top: cursorPosition.y,
+          left: cursorPosition.x,
+          transform: "translate(-50%, -50%)",
+        }}
+        onMouseEnter={() => setMouseOverFooter(true)}
+        onMouseLeave={() => setMouseOverFooter(false)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isMouseOverFooter ? 1 : 0 }}
+        transition={{ duration: 0.3 }}
+      ></motion.div>
       <div className="flex w-full flex-col justify-between md:max-w-screen-xl md:flex-row md:pl-10">
         <div className="flex w-full flex-col pt-10 md:w-1/2 md:gap-20 md:pt-20">
           <h1 className="cursor-default text-left font-tthoves text-3xl font-bold tracking-tighter text-[#e9e9e9] dark:text-[#282828] md:text-9xl">
@@ -20,7 +48,7 @@ const Footer = () => {
           <FooterArrow />
           <a
             href="mailto: gustaf@gronlund.dev"
-            className="cursor-pointer font-tthoves text-xl font-semibold tracking-tighter text-[#e9e9e9] dark:text-[#282828] md:mt-10 md:text-3xl"
+            className="relative z-50 cursor-pointer font-tthoves text-xl font-semibold tracking-tighter text-[#e9e9e9] dark:text-[#282828] md:mt-10 md:text-3xl"
           >
             gustaf@gronlund.dev
           </a>
@@ -33,7 +61,7 @@ const Footer = () => {
               <Link
                 href="https://www.linkedin.com/in/gustafgronlund/"
                 target="_blank"
-                className="flex items-center justify-center"
+                className="relative z-50 flex items-center justify-center"
               >
                 <span>
                   <FaLinkedin className="mr-1" />
@@ -45,7 +73,7 @@ const Footer = () => {
               <Link
                 href="https://github.com/GustafGronlund"
                 target="_blank"
-                className="flex items-center justify-center"
+                className="relative z-50 flex items-center justify-center"
               >
                 <span>
                   <FaGithubSquare className="mr-1" />
@@ -64,7 +92,7 @@ const Footer = () => {
           © 2024
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
