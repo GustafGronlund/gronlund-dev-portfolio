@@ -13,6 +13,7 @@ const Footer = () => {
   const handleMouseMove = (event: any) => {
     const mouseX = event.pageX;
     const mouseY = event.pageY;
+    console.log("🚀 ~ handleMouseMove ~ mouseY:", mouseY);
     setCursorPosition({ x: mouseX, y: mouseY });
   };
 
@@ -22,7 +23,7 @@ const Footer = () => {
       className="flex h-dvh w-full flex-col justify-between bg-[#282828] px-10 pt-10 dark:bg-[#e9e9e9] md:h-fit md:items-center md:px-0 md:pt-0"
     >
       <motion.div
-        className="cursor h-10 w-10 rounded-full bg-gray-50 opacity-50 blur-xl"
+        className="cursor dark: h-10 w-10 rounded-full bg-[#e9e9e9] opacity-50 blur-xl dark:bg-[#282828]"
         style={{
           position: "absolute",
           top: cursorPosition.y,
@@ -32,7 +33,7 @@ const Footer = () => {
         onMouseEnter={() => setMouseOverFooter(true)}
         onMouseLeave={() => setMouseOverFooter(false)}
         initial={{ opacity: 0 }}
-        animate={{ opacity: isMouseOverFooter ? 1 : 0 }}
+        animate={{ opacity: cursorPosition.y > 5328 ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       ></motion.div>
       <div className="flex w-full flex-col justify-between md:max-w-screen-xl md:flex-row md:pl-10">
