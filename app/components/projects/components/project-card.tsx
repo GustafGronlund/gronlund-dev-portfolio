@@ -6,6 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { motion } from "framer-motion";
 import useScrollReveal from "@/app/hooks/useScrollReveal";
 import Link from "next/link";
+import { isIOS } from "react-device-detect";
 
 type ProjectLink = { appStore?: string; googlePlay?: string };
 
@@ -32,10 +33,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const ScrollReveal = useScrollReveal;
-  const isiPhone = navigator.userAgent.match(/iPhone/i);
-  const linkToProject = isiPhone
+  // const isiPhone = navigator.userAgent.match(/iPhone/i);
+  const linkToProject = isIOS
     ? projectLinks.find((link) => link.appStore)?.appStore || ""
     : projectLinks.find((link) => link.googlePlay)?.googlePlay || "";
+
+  // const linkToProject = isIOS
+  //   ? projectLinks.find((link) => link.appStore)
+  //   : projectLinks.find((link) => link.googlePlay);
+
   return (
     <ScrollReveal delay={0} duration={0.8} initialY={10}>
       <Link href={linkToProject} target="_blank">
