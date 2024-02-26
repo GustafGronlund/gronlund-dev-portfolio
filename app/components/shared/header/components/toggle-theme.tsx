@@ -23,7 +23,7 @@ const ToggleTheme = () => {
 
   return (
     <div
-      className={`h-8 w-8 cursor-pointer rounded-full mix-blend-difference ${darkMode ? "bg-[#e9e9e9]" : "bg-[#282828]"}`}
+      className={`h-8 w-8 cursor-pointer rounded-full bg-[#e9e9e9]`}
       onClick={() => setDarkMode(!darkMode)}
     ></div>
   );
