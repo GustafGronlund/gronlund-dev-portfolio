@@ -44,7 +44,7 @@ const tthoves = localfont({
 export const metadata: Metadata = {
   title: "Gustaf Grönlund - Front End Developer",
   description:
-    "Passionate Front-End Developer with a keen eye for UI/UX, crafting seamless experiences across web and mobile platforms. I am a skilled developer covering the full spectrum, including UI/UX design, web development, and mobile development. I thrive on bringing ideas to life with code, always focusing on creating intuitive and visually engaging interfaces.",
+    "Hello world! I'm Gustaf Grönlund, a Frontend Developer based in Malmö, Sweden. I enjoy creating beautiful applications that both feel good and have a solid functionality. I love to experiment with new technologies and follow the latest trends in UI/UX.",
   icons: {
     icon: "/icon.png",
   },
