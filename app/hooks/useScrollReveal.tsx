@@ -11,6 +11,7 @@ type useScrollRevealProps = {
   initialX?: number;
   animateX?: number;
   duration: number;
+  className?: string;
 };
 
 const useScrollReveal: React.FC<useScrollRevealProps> = ({
@@ -21,6 +22,7 @@ const useScrollReveal: React.FC<useScrollRevealProps> = ({
   initialX,
   animateX,
   duration,
+  className,
 }) => {
   return (
     <motion.div
@@ -31,6 +33,7 @@ const useScrollReveal: React.FC<useScrollRevealProps> = ({
         duration: duration,
         delay: delay,
       }}
+      className={className}
     >
       {children}
     </motion.div>
