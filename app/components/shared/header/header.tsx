@@ -1,6 +1,8 @@
+import LinkAnimation from "../link-animation";
 import DynamicClock from "./components/dynamic-clock";
 import ToggleTheme from "./components/toggle-theme";
 import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { headerNavLinks } from "@/lib/data";
 
 function Header() {
   const ScrollReveal = useScrollReveal;
@@ -19,8 +21,19 @@ function Header() {
           </div>
         </ScrollReveal>
       </div>
-      <div className="flex flex-row gap-3">
-        <ScrollReveal delay={1} duration={0.5}>
+
+      <div className="flex flex-row gap-5">
+        <ScrollReveal
+          delay={1}
+          duration={0.5}
+          className="flex flex-row items-center gap-10"
+        >
+          <ul className="hidden flex-row items-center justify-between gap-10 md:flex">
+            {headerNavLinks.map((link, i) => (
+              <LinkAnimation key={i} title={link.title} href={link.href} />
+            ))}
+          </ul>
+
           <ToggleTheme />
         </ScrollReveal>
       </div>

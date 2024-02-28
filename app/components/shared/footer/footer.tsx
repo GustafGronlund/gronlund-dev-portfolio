@@ -20,6 +20,7 @@ const Footer = () => {
     <motion.footer
       onMouseMove={handleMouseMove}
       className="flex h-dvh w-full flex-col justify-between bg-[#282828] px-10 pt-10 dark:bg-[#e9e9e9] md:h-fit md:items-center md:px-0 md:pt-0"
+      id="contact-section"
     >
       <motion.div
         className="cursor h-10 w-10 rounded-full bg-gray-50 opacity-50 blur-xl dark:bg-[#282828]"

@@ -4,10 +4,13 @@ import SectionTitleText from "../shared/section-title-text";
 
 const Projects = () => {
   return (
-    <main className="mb-10 mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl">
+    <main
+      className="mb-10 mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl"
+      id="projects-section"
+    >
       <div className="flex flex-col items-end justify-end">
         <SectionTitleText
-          title={["Selected", "Works"]}
+          title={["Selected", "Projects"]}
           className="flex flex-col items-end justify-end"
         />
       </div>

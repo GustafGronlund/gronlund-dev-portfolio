@@ -4,6 +4,13 @@ import aboutPic1 from "@/public/about/me.jpeg";
 import aboutPic2 from "@/public/about/me-second.jpg";
 import aboutPic3 from "@/public/about/me-third.jpg";
 
+export const headerNavLinks = [
+  { title: "About", href: "about-section" },
+  { title: "My Skills", href: "skills-section" },
+  { title: "My Projects", href: "projects-section" },
+  { title: "Contact", href: "contact-section" },
+];
+
 export const aboutPictures = [aboutPic1, aboutPic2, aboutPic3] as const;
 
 export const projectsData = [

@@ -7,7 +7,10 @@ import useScrollReveal from "@/app/hooks/useScrollReveal";
 function Skills() {
   const ScrollReveal = useScrollReveal;
   return (
-    <main className="mb-10 mt-40 w-screen px-10 md:mt-60 md:max-w-screen-xl">
+    <main
+      className="mb-10 mt-40 w-screen px-10 md:mt-60 md:max-w-screen-xl"
+      id="skills-section"
+    >
       <div className="my-20 flex w-full flex-col items-center justify-center">
         <Marquee
           autoFill={true}

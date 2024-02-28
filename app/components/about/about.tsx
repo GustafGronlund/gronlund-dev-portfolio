@@ -6,7 +6,10 @@ import useScrollReveal from "@/app/hooks/useScrollReveal";
 function About() {
   const ScrollReveal = useScrollReveal;
   return (
-    <main className="mt-40 flex w-full flex-col px-10 md:mt-60 md:max-w-screen-xl">
+    <main
+      className="mt-40 flex w-full flex-col px-10 md:mt-60 md:max-w-screen-xl"
+      id="about-section"
+    >
       <div className="mb-20 w-full">
         <SectionTitleText title="About" />
       </div>
