@@ -55,6 +55,26 @@ export const projectsData = [
 
 export const skillsData = [
   {
+    name: "TypeScript",
+    description:
+      "I use TypeScript to write cleaner and more predictable code, especially for large and complex projects.",
+  },
+  {
+    name: "React",
+    description:
+      "I use React as my primary framework to build modern, component-based user interfaces that are responsive, interactive, and maintainable.",
+  },
+  {
+    name: "Next.js",
+    description:
+      "I use Next.js for web development because it offers a powerful framework for building fast, user-friendly, and SEO-optimized applications.",
+  },
+  {
+    name: "JavaScript",
+    description:
+      "I use JavaScript to add interactivity to web pages, like animations, form validation, and dynamic content updates.",
+  },
+  {
     name: "HTML",
     description: "I use HTML to build the foundation of web pages.",
   },
@@ -63,34 +83,24 @@ export const skillsData = [
     description: "I use CSS to add visual design to web pages.",
   },
   {
-    name: "JavaScript",
+    name: "Cypress",
     description:
-      "I use JavaScript to add interactivity to web pages, like animations, form validation, and dynamic content updates.",
+      "I use Cypress to perform end-to-end testing of user interactions and application flows, ensuring comprehensive test coverage and early detection of potential issues before they impact users.",
   },
   {
-    name: "TypeScript",
+    name: "Cucumber",
     description:
-      "I use TypeScript to write cleaner and more predictable code, especially for large and complex projects.",
+      "I use Cucumber to test end-to-end scenarios with integrated backend systems, ensuring that the application flow is robust and solid as well.",
   },
   {
-    name: "React",
+    name: "Chai",
     description:
-      "I use React to build user interfaces that are responsive, interactive, and engaging.",
+      "I use Chai for unit-testing functions, primarily through test-driven development to ensure that the functionality is robust and solid.",
   },
   {
-    name: "React Native",
+    name: "CircleCI",
     description:
-      "I use React Native to build cross-platform mobile applications for iOS and Android.",
-  },
-  {
-    name: "Next.js",
-    description:
-      "I prefer Next.js for web development because it offers a powerful framework for building fast, user-friendly, and SEO-optimized applications.",
-  },
-  {
-    name: "Flutter",
-    description:
-      "I also use Flutter to build high-performance, cross-platform mobile applications for iOS and Android.",
+      "I use CircleCI to implement continuous integration and deployment pipelines, automating testing, building, and deployment processes to ensure reliable and efficient software delivery.",
   },
   {
     name: "Node.js",
@@ -103,16 +113,6 @@ export const skillsData = [
       "I use Express.js to build robust, scalable web APIs for Node.js applications.",
   },
   {
-    name: "Git",
-    description:
-      "I use Git to collaborate with others on code projects and track changes over time.",
-  },
-  {
-    name: "Redux",
-    description:
-      "I use Redux to manage state in my React applications in a predictable and scalable way.",
-  },
-  {
     name: "MongoDB",
     description:
       "I use MongoDB to store and manage data for my web and mobile applications in a scalable and efficient way.",
@@ -123,9 +123,14 @@ export const skillsData = [
       "I use Firebase to store and manage data for my web and mobile applications in a scalable and secure way.",
   },
   {
-    name: "Tailwind",
+    name: "React Native",
     description:
-      "I use Tailwind to build responsive and visually appealing web applications with ease.",
+      "I use React Native to build cross-platform mobile applications for iOS and Android.",
+  },
+  {
+    name: "Flutter",
+    description:
+      "I also use Flutter to build high-performance, cross-platform mobile applications for iOS and Android.",
   },
   {
     name: "Dart",
@@ -133,8 +138,23 @@ export const skillsData = [
       "I use Dart to develop high-performance and cross-platform mobile applications with Flutter.",
   },
   {
+    name: "Redux",
+    description:
+      "I use Redux to manage state in my React applications in a predictable and scalable way.",
+  },
+  {
+    name: "Tailwind",
+    description:
+      "I use Tailwind to build responsive and visually appealing web applications with ease.",
+  },
+  {
     name: "Framer Motion",
     description:
       "I use Framer Motion to create engaging and interactive animations for my web and mobile applications.",
+  },
+  {
+    name: "Git",
+    description:
+      "I use Git to collaborate with others on code projects and track changes over time.",
   },
 ] as const;
