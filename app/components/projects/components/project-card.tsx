@@ -21,7 +21,7 @@ type ProjectCardProps = {
   projectLinks: readonly ProjectLink[];
 };
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard: React.FC<ProjectCardProps> = ({
   id,
   year,
   title,
@@ -115,5 +115,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </ScrollReveal>
   );
 };
-
-export default ProjectCard;

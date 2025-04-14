@@ -9,7 +9,7 @@ type SkillsCardProps = {
   skillsDescription: string;
 };
 
-const SkillsCard: React.FC<SkillsCardProps> = ({
+export const SkillsCard: React.FC<SkillsCardProps> = ({
   skillsTitle,
   skillsDescription,
 }) => {
@@ -65,5 +65,3 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
     </motion.li>
   );
 };
-
-export default SkillsCard;

@@ -7,8 +7,6 @@ type SmoothScrollProps = {
   children: ReactNode;
 };
 
-const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
+export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
   return <ReactLenis root>{children}</ReactLenis>;
 };
-
-export default SmoothScroll;

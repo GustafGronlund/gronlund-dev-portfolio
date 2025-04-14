@@ -9,7 +9,10 @@ type LinkAnimationProps = {
   href: string;
 };
 
-const LinkAnimation: React.FC<LinkAnimationProps> = ({ title, href }) => {
+export const LinkAnimation: React.FC<LinkAnimationProps> = ({
+  title,
+  href,
+}) => {
   const [isHover, setIsHover] = useState<boolean>(false);
 
   return (
@@ -50,5 +53,3 @@ const LinkAnimation: React.FC<LinkAnimationProps> = ({ title, href }) => {
     </motion.li>
   );
 };
-
-export default LinkAnimation;

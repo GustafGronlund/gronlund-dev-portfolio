@@ -20,7 +20,7 @@ const defaultAnimations = {
   },
 };
 
-const SectionTitleText: React.FC<SectionTitleTextProps> = ({
+export const SectionTitleText: React.FC<SectionTitleTextProps> = ({
   title,
   className,
 }) => {
@@ -60,5 +60,3 @@ const SectionTitleText: React.FC<SectionTitleTextProps> = ({
     </h1>
   );
 };
-
-export default SectionTitleText;

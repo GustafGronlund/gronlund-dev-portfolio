@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { BsSunFill } from "react-icons/bs";
 
-const ToggleTheme = () => {
+export const ToggleTheme = () => {
   const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
@@ -28,5 +28,3 @@ const ToggleTheme = () => {
     ></div>
   );
 };
-
-export default ToggleTheme;

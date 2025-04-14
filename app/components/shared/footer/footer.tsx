@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import FooterArrow from "./components/footer-arrow";
+import { FooterArrow } from "./components";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Footer = () => {
+export const Footer = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isMouseOverFooter, setMouseOverFooter] = useState(false);
   const handleMouseMove = (event: any) => {
@@ -96,5 +96,3 @@ const Footer = () => {
     </motion.footer>
   );
 };
-
-export default Footer;
