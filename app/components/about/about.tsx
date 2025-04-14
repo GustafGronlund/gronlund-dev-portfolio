@@ -42,15 +42,14 @@ function About() {
               animateY={0}
             >
               <p className="place-self-center font-tthoves text-base font-bold tracking-tight text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:w-[25ch]">
-                Hi there! I{"'"}m a driven developer deeply passionate about
-                design and user experience. With over 4 years of hands-on
-                experience in web and mobile development, complemented by a
-                recent degree in Front End Development, I specialize in creating
-                high-quality applications that seamlessly blend functionality
-                with visual appeal. Always eager for fresh challenges and
-                opportunities to learn and grow, I am ready to contribute my
-                skills to your projects. Let{"'"}s connect and discuss how we
-                can bring your ideas to life!
+                Hi there! I’m a developer with a strong focus on user experience
+                and design. Over the past 5+ years, I{"'"}ve worked in a variety
+                of environments — from freelancing to working at startups and
+                fast-growing scale-ups. I specialize in building web and mobile
+                apps that are both visually clear and user-friendly. I{"'"}m
+                always eager for new challenges and opportunities to grow. Let
+                {"'"}s connect and explore how we can turn your ideas into
+                reality.
               </p>
             </ScrollReveal>
           </div>
@@ -58,8 +57,8 @@ function About() {
         <div className="w-full md:mt-auto md:pl-40">
           <ScrollReveal delay={0} duration={1.5} initialY={10} animateY={0}>
             <p className="col-start-1 row-start-1 w-full font-tthoves text-2xl font-medium tracking-tighter text-[#282828] dark:text-[#e9e9e9] md:col-start-2 md:row-start-2 md:text-7xl">
-              Passionate Developer Crafting Intuitive and User-Friendly Digital
-              Experiences with a Love for Design.
+              Frontend Developer Crafting Intuitive, User-First Digital
+              Experiences That Blend Design and Functionality.
             </p>
           </ScrollReveal>
         </div>
