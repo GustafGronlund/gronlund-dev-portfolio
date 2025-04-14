@@ -90,7 +90,7 @@ const Footer = () => {
           Developed by Gustaf Grönlund
         </p>
         <p className="mt-auto cursor-default font-tthoves text-xs font-semibold tracking-tighter text-[#e9e9e9] dark:text-[#282828]">
-          © 2024
+          © 2025
         </p>
       </div>
     </motion.footer>
