@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { aboutPictures } from "@/lib/data";
 import SectionTitleText from "../shared/section-title-text";
-import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { useScrollReveal } from "@/app/hooks/";
 
 function About() {
   const ScrollReveal = useScrollReveal;

@@ -14,7 +14,7 @@ type useScrollRevealProps = {
   className?: string;
 };
 
-const useScrollReveal: React.FC<useScrollRevealProps> = ({
+export const useScrollReveal = ({
   children,
   delay,
   initialY,
@@ -23,7 +23,7 @@ const useScrollReveal: React.FC<useScrollRevealProps> = ({
   animateX,
   duration,
   className,
-}) => {
+}: useScrollRevealProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: initialY ? initialY : 0 }}
@@ -39,5 +39,3 @@ const useScrollReveal: React.FC<useScrollRevealProps> = ({
     </motion.div>
   );
 };
-
-export default useScrollReveal;

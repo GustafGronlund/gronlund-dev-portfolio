@@ -1,7 +1,7 @@
 import LinkAnimation from "../link-animation";
 import DynamicClock from "./components/dynamic-clock";
 import ToggleTheme from "./components/toggle-theme";
-import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { useScrollReveal } from "@/app/hooks/";
 import { headerNavLinks } from "@/lib/data";
 
 function Header() {

@@ -2,7 +2,7 @@ import { skillsData } from "@/lib/data";
 import SkillsCard from "./components/skills-card";
 import Marquee from "react-fast-marquee";
 import SectionTitleText from "../shared/section-title-text";
-import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { useScrollReveal } from "@/app/hooks/";
 
 function Skills() {
   const ScrollReveal = useScrollReveal;
