@@ -18,9 +18,9 @@ const Intro = () => {
         <div className="col-start-1 row-start-2">
           <ScrollReveal delay={0.3} duration={0.8}>
             <p className="text-left font-tthoves text-xs font-bold uppercase text-[#282828] dark:text-[#e9e9e9] md:max-w-[25ch] md:text-sm">
-              Passionate frontend developer with a focus on creating intuitive
-              UI/UX experiences. Dedicated to crafting web and mobile
-              applications that blend aesthetics with seamless functionality.
+              Frontend developer with a passion for creating intuitive,
+              user-first web and mobile apps that seamlessly blend design and
+              functionality to create meaningful digital experiences.
             </p>
           </ScrollReveal>
         </div>
