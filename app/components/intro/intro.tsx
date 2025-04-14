@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/app/hooks/";
 
-const Intro = () => {
+export const Intro = () => {
   const ScrollReveal = useScrollReveal;
   return (
     <section className="flex h-[83dvh] w-screen flex-col justify-between px-10 md:h-[85vh] md:max-w-screen-xl md:flex-row md:items-center md:justify-center">
@@ -38,5 +38,3 @@ const Intro = () => {
     </section>
   );
 };
-
-export default Intro;

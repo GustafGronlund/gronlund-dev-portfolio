@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-const ClockComponent = dynamic(() => import("react-live-clock"), {
+export const ClockComponent = dynamic(() => import("react-live-clock"), {
   ssr: false,
 });
 
@@ -14,5 +14,3 @@ const DynamicClock = () => {
     />
   );
 };
-
-export default DynamicClock;

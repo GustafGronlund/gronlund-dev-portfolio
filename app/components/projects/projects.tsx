@@ -1,8 +1,8 @@
 import { projectsData } from "@/lib/data";
-import ProjectCard from "./components/project-card";
-import SectionTitleText from "../shared/section-title-text";
+import { ProjectCard } from "./components";
+import { SectionTitleText } from "../shared";
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <main
       className="mb-10 mt-40 w-full px-10 md:mt-60 md:max-w-screen-xl"
@@ -26,5 +26,3 @@ const Projects = () => {
     </main>
   );
 };
-
-export default Projects;

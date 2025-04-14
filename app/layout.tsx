@@ -7,7 +7,7 @@ import {
 } from "next/font/google";
 import localfont from "next/font/local";
 import "./globals.css";
-import SmoothScroll from "./components/shared/smooth-scroll";
+import { SmoothScroll } from "./components/shared/";
 
 const roboto = Roboto({
   subsets: ["latin"],

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { aboutPictures } from "@/lib/data";
-import SectionTitleText from "../shared/section-title-text";
+import { SectionTitleText } from "../shared/";
 import { useScrollReveal } from "@/app/hooks/";
 
-function About() {
+export const About = () => {
   const ScrollReveal = useScrollReveal;
   return (
     <main
@@ -65,6 +65,4 @@ function About() {
       </section>
     </main>
   );
-}
-
-export default About;
+};

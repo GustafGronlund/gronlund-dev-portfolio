@@ -1,6 +1,6 @@
 import React from "react";
 
-const FooterArrow = () => {
+export const FooterArrow = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,5 +17,3 @@ const FooterArrow = () => {
     </svg>
   );
 };
-
-export default FooterArrow;

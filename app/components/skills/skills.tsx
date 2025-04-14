@@ -1,10 +1,10 @@
 import { skillsData } from "@/lib/data";
-import SkillsCard from "./components/skills-card";
+import { SkillsCard } from "./components/";
 import Marquee from "react-fast-marquee";
-import SectionTitleText from "../shared/section-title-text";
+import { SectionTitleText } from "../shared/";
 import { useScrollReveal } from "@/app/hooks/";
 
-function Skills() {
+export const Skills = () => {
   const ScrollReveal = useScrollReveal;
   return (
     <main
@@ -42,6 +42,4 @@ function Skills() {
       </ScrollReveal>
     </main>
   );
-}
-
-export default Skills;
+};
