@@ -1,4 +1,4 @@
-import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { useScrollReveal } from "@/app/hooks/";
 
 const Intro = () => {
   const ScrollReveal = useScrollReveal;

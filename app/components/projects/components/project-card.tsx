@@ -4,7 +4,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import { motion } from "framer-motion";
-import useScrollReveal from "@/app/hooks/useScrollReveal";
+import { useScrollReveal } from "@/app/hooks/";
 import Link from "next/link";
 import { isIOS } from "react-device-detect";
 
