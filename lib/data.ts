@@ -1,5 +1,6 @@
 import projectsImg1 from "@/public/projects/vizz-mockup.jpg";
 import projectsImg2 from "@/public/projects/zapup-mockup.jpg";
+import projectsImg3 from "@/public/projects/nsccc-mockup.jpg";
 import aboutPic1 from "@/public/about/me.jpeg";
 import aboutPic2 from "@/public/about/me-second.jpg";
 import aboutPic3 from "@/public/about/me-third.jpg";
@@ -16,6 +17,17 @@ export const aboutPictures = [aboutPic1, aboutPic2, aboutPic3] as const;
 export const projectsData = [
   {
     id: 0,
+    year: "2025",
+    title: "NSCCC",
+    description:
+      "North Sea Classic Car Club is a Danish veteran car club based in Ringkøbing. Ahead of their upcoming event in June, they wanted to modernize their online presence. The goal was to design a clean, image-forward website that better represents the spirit of the club and its community. Built with care in Figma and developed using React with TypeScript, the site features smooth animations powered by Framer Motion to bring the experience to life.",
+    tags: ["Design", "Development"],
+    techStack: ["TypeScript", "React", "Framer Motion"],
+    imageUrl: projectsImg3,
+    projectLinks: [{ website: "https://www.nsccc.dk/" }],
+  },
+  {
+    id: 1,
     year: "2023",
     title: "Vizz",
     description:
@@ -32,7 +44,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     year: "2023",
     title: "ZapUp",
     description:

@@ -8,7 +8,7 @@ import { useScrollReveal } from "@/app/hooks/";
 import Link from "next/link";
 import { isIOS } from "react-device-detect";
 
-type ProjectLink = { appStore?: string; googlePlay?: string };
+type ProjectLink = { appStore?: string; googlePlay?: string; website?: string };
 
 type ProjectCardProps = {
   id: number;
@@ -36,10 +36,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const linkToProject = isIOS
     ? projectLinks.find((link) => link.appStore)?.appStore || ""
     : projectLinks.find((link) => link.googlePlay)?.googlePlay || "";
+  const linkToWebsite =
+    projectLinks.find((link) => link.website)?.website || "";
 
   return (
     <ScrollReveal delay={0} duration={0.8} initialY={10}>
-      <Link href={linkToProject} target="_blank">
+      <Link href={linkToWebsite || linkToProject} target="_blank">
         <div
           key={id}
           className="mt-20 cursor-pointer justify-between border-b font-mono dark:border-[#e9e9e9] md:flex md:flex-row md:border-[#282828]"
